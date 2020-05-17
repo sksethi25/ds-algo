@@ -1,2 +1,2 @@
 # ds-algo
-Implementation of Data Structures a and Algos in Java
+Implementation of Data Structures and Algos in Java

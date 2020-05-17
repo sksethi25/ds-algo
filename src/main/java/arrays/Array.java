@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class Array {
 
 	public static void main(String[] args) {
-		
 		rotateArrays();
 	}
 	
 	public static void rotateArrays() {
 		rotateWithTempArray();
 		rotateWithTempVar();
+		rotateWithJugglingAlgo();
 	}
 
 
@@ -43,5 +43,16 @@ public class Array {
 		int [] rarr = artv.rightRotate(Arrays.copyOf(arr, arr.length), rotationTimes);
 		artv.printArr(rarr);
 
+	}
+	public  static void rotateWithJugglingAlgo(){
+		ArrayRotateWithJugglingAlgo arj = new ArrayRotateWithJugglingAlgo();
+		int[] arr ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+		// Rotation times
+		int rotationTimes = 3;
+
+		int[] larr =arj.leftRotate(arr, rotationTimes);
+		arj.printArr(larr);
+		int[] rarr = arj.rightRotate(arr, rotationTimes);
+		arj.printArr(rarr);
 	}
 }
